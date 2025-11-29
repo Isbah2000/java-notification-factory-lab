@@ -14,6 +14,8 @@ case "SMS":
 return new SMSNotification();
 case "PUSH":
 return new PushNotification();
+case "INAPP":
+return new InAppNotification();
 default:
 return null;
 }
