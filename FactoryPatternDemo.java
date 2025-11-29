@@ -8,7 +8,8 @@ List<String[]> requests = Arrays.asList(
 new String[] {"email", "alice@example.com", "Welcome to the course!"},
 new String[] {"SMS", "+923001234567", "Class starts at 10:00 AM"},
 new String[] {"Push", "device-abc-123", "Assignment due tomorrow"},
-new String[] {"fax", "1234", "This will show unknown"}
+new String[] {"fax", "1234", "This will show unknown"},
+new String[] {"8232"}
 );
 for (String[] req : requests) {
 String type = req[0];
