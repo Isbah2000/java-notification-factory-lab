@@ -5,6 +5,4 @@ public interface Notification {
 * @param message the message body
 */
 void send(String recipient, String message);
-
-void send(String recipient);
 }

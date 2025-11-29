@@ -9,7 +9,7 @@ new String[] {"email", "alice@example.com", "Welcome to the course!"},
 new String[] {"SMS", "+923001234567", "Class starts at 10:00 AM"},
 new String[] {"Push", "device-abc-123", "Assignment due tomorrow"},
 new String[] {"fax", "1234", "This will show unknown"},
-new String[] {"8232"}
+new String[] {"Inapp", "8232", "This is InApp Notification"}
 );
 for (String[] req : requests) {
 String type = req[0];
