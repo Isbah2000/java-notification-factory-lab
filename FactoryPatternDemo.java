@@ -1,6 +1,21 @@
 import java.util.Arrays;
 import java.util.List;
 public class FactoryPatternDemo {
+    static class Notifier {
+
+        static void notify(Notification notifier,
+                            String recipient,
+                            String message) {
+
+            boolean success = notifier.send(recipient, message);
+
+            if (success) {
+                System.out.println("ACK");
+            } else {
+                System.out.println("NACK");
+            }
+        }
+    }
 public static void main(String[] args) {
 NotificationFactory factory = new NotificationFactory();
 // Simulated notification requests: type, recipient, message
@@ -18,7 +33,7 @@ String message = req[2];
 Notification notifier = factory.getNotification(type);
 System.out.print("Request: " + type + " -> ");
 if (notifier != null) {
-notifier.send(recipient, message);
+Notifier.notify(notifier, recipient, message);
 } else {
 System.out.println("No such notification channel: " + type);
 }

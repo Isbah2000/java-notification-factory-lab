@@ -4,5 +4,5 @@ public interface Notification {
 * @param recipient where to send (email address, phone, or device id)
 * @param message the message body
 */
-void send(String recipient, String message);
+boolean send(String recipient, String message);
 }
